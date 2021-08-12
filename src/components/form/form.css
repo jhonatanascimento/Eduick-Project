@@ -1,0 +1,152 @@
+.homeFormInput {
+  background: rgba(255, 255, 255, 0.24);
+
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 1.25rem;
+
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+
+/* Radio Buttons area */
+
+.homeFormRadio label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.homeFormRadio {
+  display: inline-block;
+  width: 48%;
+
+  text-align: center;
+  padding: 0.875rem 0;
+
+  border: 1px solid transparent;
+  box-sizing: border-box;
+
+  background: rgba(121, 85, 232, 0.3);
+  border-radius: 4px;
+  color: white;
+
+  margin-bottom: 1rem;
+  transition: 0.4s;
+}
+
+.homeFormRadio.checked {
+  display: inline-block;
+  width: 48%;
+
+  text-align: center;
+  padding: 0.875rem 0;
+
+  background: #7955e8;
+  border: 1px solid #a68eef;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  margin-bottom: 1rem;
+}
+
+.homeFormRadio:last-of-type {
+  margin-left: 4%;
+}
+
+/* radio buttons checked effects
+Created with https://doodlenerd.com/html-control/css-radio-button-generator
+and adapted by me */
+
+.control {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  padding-top: 2px;
+  cursor: pointer;
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control_indicator {
+  position: absolute;
+  top: -0.1rem;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background: rgba(255, 255, 255, 0.24);
+  border: 0px solid #000000;
+  border-radius: undefinedpx;
+  transition: 0.2s;
+}
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+  background: rgba(255, 255, 255, 0.3);
+  transition: 0.2s;
+}
+
+.control input:checked ~ .control_indicator {
+  background: #ffd74f;
+  transition: 0.4s;
+}
+
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+  background: #ffd74f;
+}
+
+.control_indicator:after {
+  box-sizing: unset;
+  content: "";
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control_indicator:after {
+  display: block;
+}
+.control-radio .control_indicator {
+  border-radius: 50%;
+}
+
+.control-radio .control_indicator:after {
+  left: 6px;
+  top: 4px;
+  transform: rotate(45deg);
+  height: 7px;
+  width: 4px;
+  border-bottom: 2px solid #b68300;
+  border-right: 2px solid #b68300;
+  transition: background 250ms;
+}
+
+/* form button */
+
+.btn {
+  width: 100%;
+  height: 3rem;
+  background: #ffd74f;
+  border-radius: 0.25rem;
+  margin-bottom: 3.75rem;
+
+  font-family: "Open Sans", sans-serif;
+
+  font-weight: 700;
+  font-size: 0.875rem;
+
+  /* identical to box height, or 27px */
+
+  text-transform: uppercase;
+
+  color: #744ff4;
+}

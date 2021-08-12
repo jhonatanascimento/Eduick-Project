@@ -1,0 +1,245 @@
+/* css reset start */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* css reset end */
+
+/* home */
+
+.homeMain {
+  margin-top: 3.75rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.homePage {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #7a57fd 0%, #6135d7 100%);
+  box-shadow: 4px 2px 14px rgba(0, 0, 0, 0.05);
+}
+
+/* title section */
+.title {
+  margin-bottom: 3.75rem;
+}
+
+.title h1 {
+  font-family: "Poppins";
+  font-size: 28px;
+  line-height: 118.5%;
+  letter-spacing: 0.06rem;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.title h1 span {
+  display: block;
+  font-weight: 700;
+  color: #ffd74f;
+}
+
+.btn {
+  width: 100%;
+  height: 3rem;
+  background: #ffd74f;
+  border-radius: 0.25rem;
+  margin-bottom: 3.75rem;
+
+  font-family: "Open Sans", sans-serif;
+
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+
+  color: #744ff4;
+}
+
+/* sombra 2 */
+.homeImageEffect::before {
+  content: "";
+
+  background: linear-gradient(180deg, #864efd 0%, rgba(134, 78, 253, 0) 100%);
+  transform: rotate(-21.37deg);
+  width: 13.01rem;
+  height: 25.9rem;
+  border-radius: 0px 200px 0 200px;
+
+  position: absolute;
+  top: 2rem;
+  left: 0.1rem;
+  z-index: 1;
+}
+
+/* sombra1 */
+.homeImageEffect {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 234, 164, 0) 3.65%,
+    #ffeaa4 100%
+  );
+
+  width: 13.01rem;
+  height: 25.9rem;
+  border-radius: 0px 200px 0 200px;
+
+  position: relative;
+  top: 2.5rem;
+  left: -2rem;
+
+  margin-left: 30%;
+  z-index: 1;
+}
+
+/* principal */
+
+.homeImageEffect::after {
+  content: "";
+
+  background-image: url(https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80);
+  background-position: center;
+
+  width: 13.01rem;
+  height: 25.9rem;
+  border-radius: 0px 200px 0 200px;
+
+  position: absolute;
+  top: -1.5rem;
+  left: 16.7%;
+  z-index: 1;
+}
+
+footer {
+  background: #200e64;
+
+  width: 100%;
+  height: 6.25rem;
+}

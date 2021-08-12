@@ -1,0 +1,150 @@
+.homeNav {
+  padding-top: 1.6875rem;
+}
+
+.homeNav div {
+  display: inline-block;
+}
+
+nav.show .hamburguerMenu {
+  display: hidden;
+}
+
+.hamburguerMenu {
+  margin-left: 1.5rem;
+  position: relative;
+  top: -0.1rem;
+
+  cursor: pointer;
+  background: none;
+  border: none;
+
+  transition: .3s
+}
+
+.hamburguerMenu:hover{
+  top: -.3rem;
+
+}
+
+nav .closeBtn {
+  visibility: hidden;
+}
+
+nav.show .closeBtn {
+  visibility: visible;
+  z-index: 5;
+
+  position: fixed;
+  left: 90%;
+  top: 3.5%;
+
+  cursor: pointer;
+
+  transition: .199s;
+}
+
+nav.show .closeBtn:hover{
+  top: 3.2%;
+
+}
+
+nav.show .logo {
+  position: fixed;
+}
+
+.logo {
+  margin-left: 1.3125rem;
+  z-index: 5;
+  transition: 0.5s;
+}
+
+/* menu */
+
+nav {
+  display: flex;
+}
+
+nav .menu {
+  opacity: 0;
+  visibility: visible;
+  top: -20rem;
+}
+
+nav.show .menu {
+  background: #200e64;
+  height: 100%;
+  width: 100%;
+
+  position: fixed;
+  overflow-y: hidden;
+  top: 0;
+  left: 0;
+
+  display: grid;
+  place-content: center;
+  z-index: 2;
+
+  transition: 0.3s;
+  opacity: 1;
+}
+
+nav .menu .menuBtn,
+nav .menu ul {
+  display: none;
+}
+
+nav.show .menu ul {
+  display: block;
+  text-align: center;
+}
+
+nav.show .menu ul a {
+  text-decoration: none;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.31rem;
+  line-height: 3rem;
+  /* border-bottom: solid 0px transparent; */
+  letter-spacing: 0.1rem;
+
+  transition: 0.4s;
+}
+
+nav.show .menu ul a:hover {
+  letter-spacing: 0.3rem;
+
+  /* border-bottom:solid 2px white; */
+}
+
+nav.show .menu .menuBtn {
+  /* button */
+  width: 17rem;
+  height: 3rem;
+  margin-top: 3.6875rem;
+
+  display: block;
+
+  background: #ffd74f;
+  box-shadow: 0px 0px 11px 1px rgba(255, 231, 150, 0.45);
+  border-radius: 4px;
+
+  /* content */
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 19px;
+
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #6f48ec;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+nav.show .menu .menuBtn:hover {
+  background: rgba(255, 215, 79, 0.9);
+  box-shadow: 0px 0px 6px 1px rgba(255, 231, 150, 0.45);
+}
