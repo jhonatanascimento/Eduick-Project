@@ -19,12 +19,11 @@ nav.show .hamburguerMenu {
   background: none;
   border: none;
 
-  transition: .3s
+  transition: 0.3s;
 }
 
-.hamburguerMenu:hover{
-  top: -.3rem;
-
+.hamburguerMenu:hover {
+  top: -0.3rem;
 }
 
 nav .closeBtn {
@@ -41,22 +40,21 @@ nav.show .closeBtn {
 
   cursor: pointer;
 
-  transition: .199s;
+  transition: 0.199s;
 }
 
-nav.show .closeBtn:hover{
+nav.show .closeBtn:hover {
   top: 3.2%;
-
 }
 
 nav.show .logo {
   position: fixed;
+  transition: 1s;
 }
 
 .logo {
   margin-left: 1.3125rem;
   z-index: 5;
-  transition: 0.5s;
 }
 
 /* menu */
