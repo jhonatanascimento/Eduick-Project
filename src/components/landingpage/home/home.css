@@ -140,11 +140,11 @@ table {
 }
 
 .homePage {
-  overflow: hidden;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, #7a57fd 0%, #6135d7 100%);
+  background: linear-gradient(180deg, #7a57fd 0%, #6135d7 50%);
   box-shadow: 4px 2px 14px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
 }
 
 /* title section */
@@ -153,8 +153,8 @@ table {
 }
 
 .title h1 {
-  font-family: "Poppins";
-  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.75rem;
   line-height: 118.5%;
   letter-spacing: 0.06rem;
   color: #ffffff;
@@ -165,6 +165,10 @@ table {
   display: block;
   font-weight: 700;
   color: #ffd74f;
+}
+
+.title p {
+  display: none;
 }
 
 .btn {
@@ -181,6 +185,14 @@ table {
   text-transform: uppercase;
 
   color: #744ff4;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: rgba(255, 215, 79, 0.9);
+  letter-spacing: 0.1rem;
 }
 
 /* sombra 2 */
@@ -190,12 +202,13 @@ table {
   background: linear-gradient(180deg, #864efd 0%, rgba(134, 78, 253, 0) 100%);
   transform: rotate(-21.37deg);
   width: 13.01rem;
-  height: 25.9rem;
-  border-radius: 0px 200px 0 200px;
+  height: 25.98rem;
+  border-radius: 0% 100% 0% 100% / 50% 50% 50% 50%;
 
   position: absolute;
-  top: 2rem;
-  left: 0.1rem;
+  top: 2.6rem;
+  left: 0.55rem;
+
   z-index: 1;
 }
 
@@ -208,14 +221,13 @@ table {
   );
 
   width: 13.01rem;
-  height: 25.9rem;
-  border-radius: 0px 200px 0 200px;
+  height: 25.98rem;
+  border-radius: 0% 100% 0% 100% / 50% 50% 50% 50%;
 
   position: relative;
-  top: 2.5rem;
-  left: -2rem;
+  top: 2rem;
 
-  margin-left: 30%;
+  margin-left: 5.515rem;
   z-index: 1;
 }
 
@@ -228,18 +240,99 @@ table {
   background-position: center;
 
   width: 13.01rem;
-  height: 25.9rem;
-  border-radius: 0px 200px 0 200px;
+  height: 25.98rem;
+  border-radius: 0% 100% 0% 100% / 50% 50% 50% 50%;
 
   position: absolute;
-  top: -1.5rem;
-  left: 16.7%;
+  top: -1.3rem;
+  left: 3rem;
   z-index: 1;
+}
+
+.dots {
+  position: relative;
+  left: 30rem;
+  top: 31rem;
+}
+
+.homeImageEffect2 {
+  display: none;
+  position: absolute;
+  left: 300px;
 }
 
 footer {
   background: #200e64;
+  position: relative;
 
   width: 100%;
-  height: 6.25rem;
+  height: 6.125rem;
+}
+
+/* media querie */
+@media (min-width: 1440px) {
+  .homeMain {
+    margin-top: 10.43rem;
+    margin-left: 41.5rem;
+    margin-right: 10.81rem;
+  }
+
+  .homePage {
+    height: 1120px;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  /* title section */
+  .title h1 {
+    margin-bottom: 3.75rem;
+    font-size: 3rem;
+  }
+
+  .title p {
+    display: block;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.91rem;
+    width: 31rem;
+    color: white;
+  }
+
+  .homeImageEffect {
+    top: 15rem;
+    height: 47.93rem;
+    width: 24rem;
+    border-radius: 0px 32rem 0 32rem;
+    position: absolute;
+  }
+
+  .homeImageEffect:after {
+    height: 47.93rem;
+    width: 24rem;
+    border-radius: 0px 32rem 0 32rem;
+  }
+
+  .homeImageEffect:before {
+    top: 4.55rem;
+    left: 0.95rem;
+    height: 47.93rem;
+    width: 24rem;
+    border-radius: 0px 32rem 0 32rem;
+    transform: rotate(-21.37deg);
+  }
+
+  .homeImageEffect2 {
+    display: flex;
+    left: 80rem;
+    top: -60.5rem;
+    position: relative;
+  }
+
+  .homeImageEffect2 .homeImageEffect:after {
+    opacity: 0;
+  }
+
+  footer {
+    height: 302px;
+  }
 }

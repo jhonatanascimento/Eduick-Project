@@ -7,18 +7,13 @@ class Form extends React.Component {
     super(props);
     this.state = {
       value: "Type here what are you looking for",
-      checked: 'teacher'
-      
+      checked: "teacher"
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.radioChange = this.radioChange.bind(this);
-
-    
   }
-
-  
 
   // input text handlers
 
@@ -35,22 +30,16 @@ class Form extends React.Component {
     this.setState({ checked: event.target.value });
   }
 
-  
-
   render() {
-
     var formRadioClass;
     var formRadioClass1;
-    if (this.state.checked === 'teacher'){
-      formRadioClass = 'homeFormRadio checked';
-      formRadioClass1 = 'homeFormRadio';
-      
+    if (this.state.checked === "teacher") {
+      formRadioClass = "homeFormRadio checked";
+      formRadioClass1 = "homeFormRadio";
     } else {
-      formRadioClass1 = 'homeFormRadio checked';
-      formRadioClass = 'homeFormRadio';
+      formRadioClass1 = "homeFormRadio checked";
+      formRadioClass = "homeFormRadio";
     }
-    
-
 
     return (
       <form onSubmit={this.handleSubmit}>
@@ -67,9 +56,8 @@ class Form extends React.Component {
             <input
               type="radio"
               onChange={this.radioChange}
-              value = 'teacher'
-              checked={this.state.checked === 'teacher'}
-              
+              value="teacher"
+              checked={this.state.checked === "teacher"}
             />
             <div className="control_indicator"></div>
           </label>
@@ -77,12 +65,16 @@ class Form extends React.Component {
         <div className={formRadioClass1}>
           <label className="control control-radio">
             i'm a student
-            <input type="radio" value='student' checked={this.state.checked === 'student'} onChange={this.radioChange} />
+            <input
+              type="radio"
+              value="student"
+              checked={this.state.checked === "student"}
+              onChange={this.radioChange}
+            />
             <div className="control_indicator"></div>
           </label>
         </div>
 
-        <br />
         <input type="submit" className="btn" value="Search" />
       </form>
     );

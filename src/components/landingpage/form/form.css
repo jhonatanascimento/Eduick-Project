@@ -1,7 +1,7 @@
 .homeFormInput {
-  background: rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.1);
 
-  border: 1px solid #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   border-radius: 4px;
 
@@ -12,20 +12,27 @@
   font-size: 14px;
   text-align: center;
   color: white;
+  transition: 0.2s;
+}
+
+.homeFormInput:focus {
+  background-color: rgba(121, 85, 232, 0.3);
+  outline: none;
 }
 
 /* Radio Buttons area */
 
 .homeFormRadio label {
   font-family: "Open Sans", sans-serif;
-  font-size: 10px;
+  font-size: 0.625rem;
   text-transform: uppercase;
   color: #ffffff;
+  font-weight: 700;
 }
 
 .homeFormRadio {
   display: inline-block;
-  width: 48%;
+  width: 47.79%;
 
   text-align: center;
   padding: 0.875rem 0;
@@ -43,7 +50,7 @@
 
 .homeFormRadio.checked {
   display: inline-block;
-  width: 48%;
+  width: 47.79%;
 
   text-align: center;
   padding: 0.875rem 0;
@@ -57,7 +64,7 @@
 }
 
 .homeFormRadio:last-of-type {
-  margin-left: 4%;
+  margin-left: 4.41%;
 }
 
 /* radio buttons checked effects
@@ -149,4 +156,35 @@ and adapted by me */
   text-transform: uppercase;
 
   color: #744ff4;
+}
+
+@media (min-width: 1440px) {
+  .homeFormInput {
+    width: 37.56rem;
+    height: 3.5rem;
+    text-align: left;
+  }
+
+  .homeFormRadio,
+  .homeFormRadio.checked {
+    width: 10.125rem;
+    height: 3.5rem;
+    padding-top: 1.2rem;
+  }
+
+  .homeFormRadio label {
+    font-size: 0.875rem;
+  }
+
+  .homeFormRadio:last-of-type {
+    margin-left: 1.25rem;
+  }
+
+  .btn {
+    width: 13.0625rem;
+    height: 3.5rem;
+    display: inline-block;
+    margin-left: 3rem;
+    margin-bottom: 7.93rem;
+  }
 }
