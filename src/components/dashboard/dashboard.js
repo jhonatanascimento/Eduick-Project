@@ -15,27 +15,33 @@ class Dashboard extends React.Component {
         </header>
         <main>
           <section className="welcome">
-            <div>Hello Student</div>
+            <div className="yellowImage"></div>
+            <h1>
+              Hello <span>Student</span>
+            </h1>
             <p>
               Whether you are a student trying to find your ideal private
               language teachers/tutors
             </p>
           </section>
-          <section className="container">
-            <div className="card">
-              <img alt="Imagem" />
-              <div className="reviewsAndLessons">
-                <span>10 Lessons</span>
-              </div>
-              <h2>Master English: Improve Your Speaking</h2>
-            </div>
 
-            <div className="card">
-              <img alt="Imagem" />
-              <div className="reviewsAndLessons">
-                <span>10 Lessons</span>
+          <section className="container">
+            <div className="cards">
+              <div className="card">
+                <img alt="Imagem" />
+                <div className="reviewsAndLessons">
+                  <span>10 Lessons</span>
+                </div>
+                <h2>Master English: Improve Your Speaking</h2>
               </div>
-              <h2>Master English: Improve Your Speaking</h2>
+
+              <div className="card">
+                <img alt="Imagem" />
+                <div className="reviewsAndLessons">
+                  <span>10 Lessons</span>
+                </div>
+                <h2>Master English: Improve Your Speaking</h2>
+              </div>
             </div>
           </section>
         </main>
