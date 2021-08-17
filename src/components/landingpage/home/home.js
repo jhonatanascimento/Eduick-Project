@@ -41,7 +41,7 @@ class Home extends React.Component {
           <div className="dots">
             <Dots />
           </div>
-          <i></i>
+          <div className="littleImage"></div>
         </div>
         <div className="homeImageEffect2">
           <div className="homeImageEffect"></div>
