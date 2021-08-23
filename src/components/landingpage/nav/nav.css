@@ -148,7 +148,7 @@ nav.show .menu .menuBtn:hover {
 }
 
 /* media querie */
-@media (min-width: 1440px) {
+@media (min-width: 1336px) {
   nav .menu {
     opacity: 1;
     visibility: visible;
