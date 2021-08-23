@@ -256,26 +256,13 @@ table {
 }
 
 .littleImage {
-  width: 193px;
-  height: 193px;
-  background: linear-gradient(180deg, #ffc700 0%, rgba(255, 199, 0, 0.6) 100%);
-  position: relative;
-
-  border-radius: 0 100% 100% 100%;
-  z-index: 3;
-
-  left: 20rem;
-  top: 23rem;
+  visibility: hidden;
 }
 
 .homeImageEffect2 {
   display: none;
   position: absolute;
   left: 300px;
-}
-
-.littleImage {
-  display: none;
 }
 
 footer {
@@ -347,6 +334,24 @@ footer {
 
   .homeImageEffect2 .homeImageEffect:after {
     opacity: 0;
+  }
+
+  .littleImage {
+    visibility: visible;
+    width: 193px;
+    height: 193px;
+    background: linear-gradient(
+      180deg,
+      #ffc700 0%,
+      rgba(255, 199, 0, 0.6) 100%
+    );
+    position: relative;
+
+    border-radius: 0 100% 100% 100%;
+    z-index: 3;
+
+    left: 20rem;
+    top: 23rem;
   }
 
   footer {
