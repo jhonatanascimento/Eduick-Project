@@ -274,7 +274,7 @@ footer {
 }
 
 /* media querie */
-@media (min-width: 1336px) {
+@media (min-width: 1200px) {
   .homeMain {
     margin-top: 10.43rem;
     margin-left: 41.5rem;
